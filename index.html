@@ -26,7 +26,67 @@
         </div>
     </div>
 </div>
+<!----------------------about--------------->
 
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <!----    <div class="about-col-1">
+                <img src="images/user.png">
+            </div> -->
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>A motivated, adaptable, and responsible computing undergraduate
+                    seeking a position in an IT position which will utilize the professional,
+                    technical and skills developed through keep practicing in this field.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Projects')">Projects</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing webapp interfaces</li>
+                            <li><span>Web Development</span><br>web based application develooments</li>
+                            <li><span>App Development</span><br>Building Android/ios apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Projects">
+                        <ul>
+                            <li><span>Tourism Management System</span><br>Developed a web-based management application. Technology Used - HTML, CSS, PHP, MySQL</li>
+                            <li><span>Event Planning System</span><br>Developed a web application for hotel management system.Technology Used - HTML, CSS, Java Script, MySQL</li>
+                            <li><span>Management System for Electro Grid</span><br>Developed a web-based management application. Technology Used - HTML, CSS, Java, Java Script, Maven, MongoDB</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>Bachelor Degree</span><br>I have been studying IT special degree since 2019 in SriLanka Institute of Information Technology.</li>
+                            <li><span>Diploma</span><br>I did Diploma in Information Technology in Esoft metro campus.</li>
+                            <li><span>Advanced level</span><br>I did advanced level in Bio stream. My school was Pinnawala Central College.</li>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+
+var tablinks = document.getElementsByClassName("tab-links");
+var tabcontents = document.getElementsByClassName("tab-contents");
+
+function opentab(tabname){
+    for(tablinks of tablinks){
+        tablink.classList.remove("active-link");
+    }
+    for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+}
+
+</script>
 
 </body>
 </html>
